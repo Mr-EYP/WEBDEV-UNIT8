@@ -293,25 +293,5 @@
     <script src="js/bootstrap-4.4.1.js"></script>
     <script src="js/popper.min.js"></script>
     
-    <script>
-      document.getElementById('sortSelect').addEventListener('change', function() {
-        const container = document.getElementById('productsContainer');
-        const cards = Array.from(container.querySelectorAll('.col-12'));
-        
-        cards.sort((a, b) => {
-          const priceA = parseInt(a.querySelector('.badge-primary').textContent.replace('£', ''));
-          const priceB = parseInt(b.querySelector('.badge-primary').textContent.replace('£', ''));
-          
-          if (this.value === '1') {
-            return priceA - priceB; // Low to High
-          } else if (this.value === '2') {
-            return priceB - priceA; // High to Low
-          }
-          return 0; // Popular (default)
-        });
-        
-        cards.forEach(card => container.appendChild(card));
-      });
-    </script>
 </body>
 </html>

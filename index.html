@@ -21,38 +21,35 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-custom" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Main navigation">
     <div class="container-fluid">
-   
-      <!-- Brand -->
-      <a class="navbar-brand fw-bold" href="index">ETT</a>
-      
+      <a class="navbar-brand fw-bold" href="index.html">ETT</a>
       <img src="images/ETT-logo.webp" alt="ETT company icon" class="rounded-circle" width="40" height="40">
-      <!-- Right side icons -->
+
       <div class="ms-auto d-flex align-items-center gap-3">
-        <a href="#" class="nav-link">
-          <i class="bi bi-star-fill"></i>
-          <img src="images/5-Star-Rating-Review-Transparent-PNG.png" alt="star rating icon" class="rounded-circle" width="95" height="25">
+        <a href="#" class="nav-link p-0">
+          <img src="images/5-Star-Rating-Review-Transparent-PNG.png" alt="star rating icon" width="95" height="25">
         </a>
-        <a href="#" class="nav-link">
-          <i class="profile image"></i>
+        <a href="#" class="nav-link p-0">
           <img src="images/Default-Profile-Picture-Download-PNG-Image.png" alt="profile icon" class="rounded-circle" width="30" height="30">
         </a>
       </div>
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavProducts" aria-controls="navbarNavProducts" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
 
-      <!-- Nav links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNavProducts">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+
+      
+        </div>
       </div>
     </div>
   </nav>
@@ -69,11 +66,9 @@
 
     <!-- Creates an overlay div positioned absolutely over the hero image.-->
     <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white" style="background: rgba(0, 0, 0, 0.4);">
-      <div class="container">
+      <div class="container px-2 px-md-0">
         <div class="hero-text"> Welcome to ETT Computers</div>
-
         <p class="lead mb-4">Reliable, affordable computers and support for home and small business users.</p>
-        <!-- Add a link to the products page using href and label-->
         <a href="products.html" class="btn btn-primary btn-lg">Browse Products</a>
       </div>
     </div>
@@ -94,7 +89,7 @@
             <h5 class="card-title">ETT</h5>
             <p class="card-text">Computers for the average Joe</p>
             <p>Budget PCs - Perfect for getting into the world of computing</p>
-            <a href="#" class="btn btn-primary">Shop Budget</a>  
+            <a href="products.html" class="btn btn-primary">Shop Budget</a>  
           </div>
         </div>
       </div>
@@ -107,7 +102,7 @@
             <h5 class="card-title">ETT Plus</h5>
             <p class="card-text">Upgraded machines for power users</p>
             <p>Mid-range PCs - Great performance for work and play</p>
-            <a href="#" class="btn btn-primary">Shop Mid Range</a>
+            <a href="products.html" class="btn btn-primary">Shop Mid Range</a>
           </div>
         </div>
       </div>
@@ -171,7 +166,7 @@
               <img src="images/twitter-icon.png" alt="twitter icon" class="rounded-circle" width="40">
             </a>
           </div>
-        </div>z
+        </div>
       </div>
 
       <hr class="bg-white-50">
@@ -185,7 +180,7 @@
     <!-- Javascripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
     <script src="js/popper.min.js"></script>
     
 </body>

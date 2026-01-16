@@ -12,7 +12,7 @@
 }
 
 .navbar-custom .nav-link:hover {
-  color: #ffa500 !important;
+  color: #00ddff !important;
 }
 
 /* Card customization */
@@ -30,22 +30,22 @@
 
 /* Button accents */
 .btn-primary {
-  background-color: #ffa500 !important;
-  border-color: #ffa500 !important;
+  background-color: #00ddff !important;
+  border-color: #00ddff !important;
 }
 
 .btn-primary:hover {
-  background-color: #ff8c00 !important;
-  border-color: #ff8c00 !important;
+  background-color: #04a8b7 !important;
+  border-color: #04a8b7 !important;
 }
 
 /* Link accents */
 a {
-  color: #ffa500;
+  color: #00ddff;
 }
 
 a:hover {
-  color: #ff8c00;
+  color: #00ddff;
 }
 
 /* Hero section text */
@@ -54,6 +54,8 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: clamp(24px, 8vw, 60px);
+  max-width: 90%;
 }
 
 
