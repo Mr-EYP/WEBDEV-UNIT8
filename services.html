@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ETT — About Us</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <!--custom font-->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">ETT</a>
+      <img src="images/ETT-logo.webp" alt="ETT company icon" class="rounded-circle" width="40" height="40">
+
+      <div class="ms-auto d-flex align-items-center gap-3 d-lg-none">
+        <a href="#" class="nav-link p-0">
+          <img src="images/5-Star-Rating-Review-Transparent-PNG.png" alt="star rating icon" width="95" height="25">
+        </a>
+        <a href="#" class="nav-link p-0">
+          <img src="images/Default-Profile-Picture-Download-PNG-Image.png" alt="profile icon" class="rounded-circle" width="30" height="30">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAbout" aria-controls="navbarNavAbout" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAbout">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item active"><a class="nav-link" href="about us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Main: Services section -->
+    <main class="py-5" id="main" role="main">
+        <div class="container">
+            <header class="mb-4 text-center">
+                <h1 class="h3 mb-1">ETT'S Services</h1>
+                <p class="text-muted mb-0">Comprehensive solutions for all your computer and technical needs.</p>
+            </header>
+
+            <section aria-labelledby="services-heading">
+                <!-- bootstrap accordion part (the class id=servicesAccordion) showing 3 service offerings -->
+                <div class="accordion" id="servicesAccordion">
+                    <!-- service 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Technical Support from ETT Experts
+                            </button>
+                        </h2>
+                        <!-- first service expanded by default using the property "collapse show" -->
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                Our certified experts provide 24/7 technical support for hardware and software issues. We quickly diagnose and resolve problems to minimize your downtime.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service 2-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ETT System Setup
+                            </button>
+                        </h2>
+                        <!-- Collapsed by default -->
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                We professionally install and configure all your devices—computers, laptops, printers, and peripherals. Every system is optimized and tested for peak performance from day one.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Maintenance Plans -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Our Unbeatable Maintenance Plans
+                            </button>
+                        </h2>
+                        <!-- Collapsed by default -->
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                Our customizable maintenance plans keep your systems running smoothly with regular updates, security patches, and performance optimization. We prevent issues before they become costly problems.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<!-- Footer-->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="images/ETT-logo.webp" alt="ETT company icon" class="rounded-circle" width="50" height="50">
+          </div>
+          <p>Your trusted partner for quality computers and expert support.</p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Contact Us</h5>
+          <p>
+            <i class="bi bi-telephone"></i> 07758693711<br>
+            <i class="bi bi-envelope"></i> info@ettcomputers.com<br>
+            <i class="bi bi-geo-alt"></i> 4 Fortnite St, Derry, Ireland
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Troubleshooting</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Warranty Info</a></li>
+            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <h5>Follow Us</h5>
+          <div class="icons d-flex justify-content-center gap-2">
+            <a href="https://www.instagram.com/">
+              <img src="images/instagram-icon.png" alt="instagram icon" class="rounded-circle" width="40">
+            </a>
+            <a href="https://www.facebook.com/">
+              <img src="images/facebook-icon.png" alt="facebook icon" class="rounded-circle" width="40">
+            </a>
+            <a href="https://www.twitter.com/">
+              <img src="images/twitter-icon.png" alt="twitter icon" class="rounded-circle" width="40">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="bg-white-50">
+      <div class="text-center text-white-50">
+        <p>&copy ETT Computers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<!--footer end-->
+
+    
+    <!-- Javascripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>
