@@ -58,6 +58,27 @@ a:hover {
   max-width: 90%;
 }
 
+ /* Accordion styling */
+    .accordion-button {
+      border-color: #6f42c1 !important;
+      color: #6f42c1 !important;
+      font-weight: 500;
+    }
+    
+    .accordion-button:not(.collapsed) {
+      background-color: #6f42c1 !important;
+      color: white !important;
+      border-color: #6f42c1 !important;
+    }
+    
+    .accordion-button:focus {
+      border-color: #00ddff !important;
+      box-shadow: 0 0 0 0.25rem rgba(0, 221, 255, 0.25) !important;
+    }
+    
+    .accordion-item {
+      border-color: #6f42c1 !important;
+    }
 
 /* Custom font */
 .Body {

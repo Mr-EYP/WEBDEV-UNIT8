@@ -16,14 +16,23 @@
         font-family: 'Work Sans', sans-serif;
         font-size: 18px;
     }
-</style>
+    
+    /* Hide form and show success message when form is valid and submitted */
+    #contactForm:valid ~ #successMessage {
+        display: block !important;
+    }
+    
+    #contactForm:valid {
+        display: none;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation  -->
   <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Main navigation">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="index.html">ETT</a>
-      <img src="images/ETT-logo.webp" alt="ETT company icon" class="rounded-circle" width="40" height="40">
+      <img src="images/ETT-logo.png" alt="ETT company icon" class="rounded-circle" width="40" height="40">
 
       <div class="ms-auto d-flex align-items-center gap-3">
         <a href="#" class="nav-link p-0">
@@ -54,7 +63,7 @@
   </nav>
 
 <!-- Main: help/contact section -->
-    <main class="py-5" id="main" role="main">
+    <main class="py-1" id="main" role="main">
         <div class="container">
             <header class="mb-5 text-center">
                 <h1 class="h2 mb-2">Help & Support</h1>
@@ -110,6 +119,11 @@
 
                                 <button type="submit" class="btn btn-primary">Send Message</button>
                             </form>
+
+                            <div id="successMessage" class="alert alert-success d-none" role="alert">
+                                <h4 class="alert-heading">Thank You!</h4>
+                                <p>Your message has been sent successfully. We'll get back to you as soon as possible.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +138,7 @@
       <div class="row g-4">
         <div class="col-md-3">
           <div class="d-flex align-items-center gap-2 mb-3">
-            <img src="images/ETT-logo.webp" alt="ETT company icon" class="rounded-circle" width="50" height="50">
+            <img src="images/ETT-logo.png" alt="ETT company icon" class="rounded-circle" width="50" height="50">
           </div>
           <p>Your trusted partner for quality computers and expert support.</p>
         </div>
